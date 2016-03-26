@@ -4,12 +4,15 @@ env
 .Python
 include
 lib
+<<<<<<< HEAD
 # Created by https://www.gitignore.io  ### Vim ### 
 [._]*.s[a-w][a-z] 
 [._]s[a-w][a-z] 
 *.un~ 
 Session.vim 
 .netrwhist *~
+=======
+>>>>>>> a5a17f4af0c1b3fedaa89227942b3c9eef93156d
 
 # Python Packages
 *.egg

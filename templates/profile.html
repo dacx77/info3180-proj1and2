@@ -1,0 +1,72 @@
+
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+{% block css %}
+<style type="text/css">
+  body{
+    padding-top: 50px;
+    background-color: #eee !important;
+  }
+  
+  #userInfo
+  {
+      
+      -moz-box-shadow: 0 0 2px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+    padding: 10px;
+    height:230px;
+    background-color: #ADD8E6;
+  }
+  
+  #fullName
+  {
+      -moz-box-shadow: 0 0 2px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+    padding:10px;
+    background-color: #ADD8E6;
+  }
+  
+  #date
+  {
+      margin-top:20px;
+       -moz-box-shadow: 0 0 2px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+    padding: 10px;
+    background-color: #ADD8E6;
+  }
+  
+  #profPic
+  {
+    position: absolute;
+  }
+  
+</style>
+{% endblock %}
+
+{% block main %}
+<div class= "col-md-6 col-md-offset-3" id="profileCard">
+    
+    <div class="col-md-5 col-md-offset-1" id="profPic">
+        <img src="http://www.entertainmentearth.com/images/AUTOIMAGES/NC51415lg.jpg" width=200px height=200px></img>
+    </div>
+    
+    <div class="col-md-5 col-md-offset-6" id="fullName">Black Alien</div>
+    
+    <div class="col-md-5 col-md-offset-6" id="date">{{time}}</div>
+    
+    <div class= "col-md-5 col-md-offset-6" id= "userInfo">
+        <div id="username">Username: alien</div>
+        <div id="idNum">ID: 6000043877 </div>
+        <div id="sex">Sex: Male</div>
+        <div id="age">Age: 946</div>
+    </div>
+</div>
+
+{% endblock %}
